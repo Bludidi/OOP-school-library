@@ -64,9 +64,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**[OOP-school-library]** is a...
+**[OOP-school-library]** allows users to add and rent books
 
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Built With Ruby <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -82,7 +82,7 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://expressjs.com/">Ruby</a></li>
   </ul>
 </details>
 
@@ -111,7 +111,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- Not deployed yet
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,6 +122,12 @@ After you're finished please remove all the comments and instructions!
 > Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
+Clone this repository to your desired folder:
+
+```sh
+  git clone git@github.com/Bludidi/OOP-school-library.git
+  cd OOP-school-library
+```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -178,25 +184,11 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank Mike Dane of Giraffe Academy and freeCodeCamp.org
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
