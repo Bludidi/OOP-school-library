@@ -84,14 +84,18 @@ class App
   end
 
   def create_rental
-    puts 'Select a book from the following list by number'
-    @books_list.each_with_index do { |book, index| puts "#{index}) Title: '#{book.title}', Author: #{book.author}" }
-    book_num = gets.chomp.to_i
-    puts
-    puts 'Select a person from the following list by number (not id)'
-    @people_list.each_with_index do |person, index|
+  
+    if @books_list.empty?
+      puts 'No books to rent.'
+      puts 'Enter 4 to create a new book'
+      puts ''
+      select_option
+    else 
+      puts 'Select a book from the following list by number'
+      @books_list.each_with_index do |book, index|
       puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
+
     person_num = gets.chomp.to_i
 
     print 'Date: '
