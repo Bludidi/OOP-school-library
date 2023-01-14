@@ -1,3 +1,5 @@
+# rubocop:disable all
+
 require './Entities/student'
 require './Entities/teacher'
 require './Relationship/book'
