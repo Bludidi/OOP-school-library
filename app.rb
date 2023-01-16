@@ -1,9 +1,9 @@
 # rubocop:disable all
 
-require './Entities/student'
-require './Entities/teacher'
-require './Relationship/book'
-require './Relationship/rental'
+require './student'
+require './teacher'
+require './book'
+require './rental'
 
 class App
   def initialize(parent)
@@ -29,7 +29,7 @@ class App
     else
       puts 'All people in the library'
       @people_list.each do |person|
-        puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+        puts "[#{person.class}] Name: #{person.name}, Age: #{person.age}"
       end
     end
     @parent.show_menu
@@ -86,18 +86,14 @@ class App
   end
 
   def create_rental
-  
-    if @books_list.empty?
-      puts 'No books to rent.'
-      puts 'Enter 4 to create a new book'
-      puts ''
-      select_option
-    else 
-      puts 'Select a book from the following list by number'
-      @books_list.each_with_index do |book, index|
-      puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+    puts 'Select a book from the following list by number'
+    @books_list.each_with_index { |book, index| puts "#{index}) Title: '#{book.title}', Author: '#{book.author}'" }
+    book_num = gets.chomp.to_i
+    puts
+    puts 'Select a person from the following list by number (not id)'
+    @people_list.each_with_index do |person, index|
+      puts "#{index}) [#{person.class}] Name: #{person.name}, Age: #{person.age}"
     end
-
     person_num = gets.chomp.to_i
 
     print 'Date: '
@@ -125,4 +121,4 @@ class App
   def exit
     puts 'Thank you for using the app, see you later!'
   end
-end
+end 
