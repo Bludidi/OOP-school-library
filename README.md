@@ -54,9 +54,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+basic-UI
+- **[List all books in the library]**
+- **[Filter age of students]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,9 +102,8 @@ Clone this repository to your desired folder:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Preserve Data]**
+- [ ] **[Unit Test]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
