@@ -2,9 +2,9 @@ require_relative './nameable'
 require_relative './rental'
 
 class Person < Nameable
-  attr_accessor :name, :age, :rentals
+  attr_accessor :id, :name, :age, :rentals
 
-  def initialize(age, name = 'Unknown', parent_permission: true)
+  def initialize(id, age, name = 'Unknown', parent_permission: true)
     super()
     @id = Random.rand(1..1000)
     @name = name
