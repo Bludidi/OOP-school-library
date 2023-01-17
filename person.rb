@@ -1,5 +1,3 @@
-# rubocop:disable all
-
 require_relative './nameable'
 require_relative './rental'
 
